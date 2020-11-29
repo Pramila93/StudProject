@@ -1,0 +1,8 @@
+<div *ngIf="flag">
+    <h1>Student Details</h1>
+    <h3>Student Id: {{stud.id}}</h3>
+    <h3>Student Name: {{stud.name|uppercase}}</h3>
+    <h3>Student Class: {{stud.std|standard}}</h3>
+    <h3>Birth Date: {{stud.dob}}</h3>
+    <h3>Total Marks: {{stud.marks|per}}</h3>
+</div>

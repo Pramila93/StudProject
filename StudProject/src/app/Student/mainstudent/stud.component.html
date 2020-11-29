@@ -1,0 +1,17 @@
+<div class="myrow">
+    <div class="mycol">
+        <slist [stud]="stud" 
+        (editEvent)="updateStud($event)"
+        (deleteEvent)="deleteStud($event)"
+        (showEvent)="showStudentDetails($event)"
+        ></slist>
+        <br>
+        <button type="button" name="btn" (click)="showform()">Add New Student</button>
+    </div>
+    <div class="mycol">
+        <div *ngIf="flag">
+            <sadd (myflag)="flag=$event" [st]="sob"></sadd>
+        </div>
+        <detstud [stud]="sob" [flag]="visit"></detstud>
+    </div>
+</div>

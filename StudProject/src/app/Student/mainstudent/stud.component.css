@@ -1,0 +1,9 @@
+.myrow{
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: auto auto auto;
+    padding: 10px; 
+}
+button{
+    color: darkviolet;
+}

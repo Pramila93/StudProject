@@ -1,0 +1,18 @@
+<div>
+    <h1><u>Student Details year 2020</u></h1>
+    <table border="1">
+        <tr style="background-color:darkred;"><th>Stud Id</th><th>Stud Name</th><th>Stud Std</th><th>Birth Date</th><th>Marks</th><th>Operations</th></tr>
+        <tr *ngFor="let s of stud" style="background-color: darksalmon;">
+            <td>{{s.id}}</td>
+            <td>{{s.name|uppercase}}</td>
+            <td>{{s.std|standard}}</td>
+            <td>{{s.dob}}</td>
+            <td>{{s.marks|per}}</td>
+            <td>
+                <button type="button" name="btn" (click)="editStud(s)">Edit</button>&nbsp;
+                <button type="button" name="btn" (click)="deleteStud(s)">Delete</button>&nbsp;
+                <button type="button" name="btn" (click)="showStud(s)">View</button>
+            </td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,15 @@
+<div class="fclass">
+    <h1>Enter Students Details</h1>
+    <form>
+        Student ID : <input type="number" name="id" [(ngModel)]="id"><br><br>
+        Student Name : <input type="text" name="name" [(ngModel)]="name"><br><br>
+        Student Standard : <input type="number" name="std" [(ngModel)]="std"><br><br>
+        Student DoB : <input type="text" name="dob" [(ngModel)]="dob"><br><br>
+        Student Marks : <input type="number" name="marks" [(ngModel)]="marks"><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button  *ngIf="show" type="button" name="btn" (click)="addStud()">Add</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button  *ngIf="!show" type="button" name="btn" (click)="updateStud()">Update</button>
+        <br><br>
+    </form>
+</div>

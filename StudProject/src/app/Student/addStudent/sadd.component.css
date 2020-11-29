@@ -1,0 +1,18 @@
+.fclass{
+    border: darkred solid 5%;
+    border-radius: 3%;
+    background-color: deeppink;
+}
+h1{
+    color: grey;
+}
+
+input
+{
+    color: darkslateblue;
+}
+button
+{
+    color: darkslateblue;
+}
+
